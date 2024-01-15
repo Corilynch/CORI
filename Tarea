@@ -1,0 +1,21 @@
+Python 3.11.0 (v.3.11.0:deaf509ef, Oct 24 2022, 14:43:23) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin 
+Type "help", "coppuright", "credits" or "license()" for more information. 
+ar= ('arepa')
+h= ('harina')
+a= (agua')
+ar= h+a
+h=3
+a= 6
+int(h)
+3
+float(h)
+3.0
+int(a)
+6
+float(a)
+6.0
+int(h+a)
+9
+float (h+a)
+9.0
+#receta 
