@@ -1,0 +1,7 @@
+x = input ('que años son bisiestos?')
+if 1900 < x < 2199:
+    if x / 4 == int (x / 4):
+     print ('año bisiesto')
+else:
+    print ('no es bisiesto')
+    
