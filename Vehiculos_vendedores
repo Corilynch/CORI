@@ -1,0 +1,55 @@
+class Seller:
+    def __init__(self, nombre, telefono, email):
+        self.nombre = nombre
+        self.telefono = telefono
+        self.email = email
+
+    def __str__(self):
+        return f"Nombre: {self.nombre}\nTeléfono: {self.telefono}\nEmail: {self.email}"
+
+
+class Carro(Vehiculo):
+    def __init__(self, marca, modelo, año, num_puertas, tipo_combustible, seller):
+        super().__init__("Carro", marca, modelo, año)
+        self.num_puertas = num_puertas
+        self.tipo_combustible = tipo_combustible
+        self.seller = seller
+
+
+class Barco(Vehiculo):
+    def __init__(self, marca, modelo, año, eslora, manga, seller):
+        super().__init__("Barco", marca, modelo, año)
+        self.eslora = eslora
+        self.manga = manga
+        self.seller = seller
+
+
+class Avion(Vehiculo):
+    def __init__(self, marca, modelo, año, autonomia_vuelo, num_motores, seller):
+        super().__init__("Avión", marca, modelo, año)
+        self.autonomia_vuelo = autonomia_vuelo
+        self.num_motores = num_motores
+        self.seller = seller
+
+
+#pseudocodigo
+seller1 = Seller("Concesionario A", "123456789", "concesionarioa@email.com")
+seller2 = Seller("Concesionario B", "987654321", "concesionariob@email.com")
+
+carro1 = Carro("Toyota", "Corolla", 2023, 4, "Gasolina", seller1)
+carro2 = Carro("Ford", "Mustang", 2022, 2, "Gasolina", seller2)
+
+barco1 = Barco("Azimut", "Magellano 66", 2020, 20, 5.2, seller1)
+barco2 = Barco("Beneteau", "Oceanis 41.1", 2021, 12.44, 4.20, seller2)
+
+avion1 = Avion("Airbus", "A320neo", 2022, 6300, 2, seller1)
+avion2 = Avion("Boeing", "737 MAX", 2021, 4075, 2, seller2)
+
+print(f"**Carro 1:**\n{carro1}")
+print(f"\n**Carro 2:**\n{carro2}")
+
+print(f"\n**Barco 1:**\n{barco1}")
+print(f"\n**Barco 2:**\n{barco2}")
+
+print(f"\n**Avión 1:**\n{avion1}")
+print(f"\n**Avión 2:**\n{avion2}")

@@ -1,0 +1,68 @@
+class Vehiculo:
+    def __init__(self, tipo, marca, modelo, año):
+        self.tipo = tipo
+        self.marca = marca
+        self.modelo = modelo
+        self.año = año
+
+
+class Carro:
+    def __init__(self, marca, modelo, año, num_puertas, tipo_combustible):
+        self.tipo = "Carro"
+        self.marca = marca
+        self.modelo = modelo
+        self.año = año
+        self.num_puertas = num_puertas
+        self.tipo_combustible = tipo_combustible
+
+    def __str__(self):
+        return f"Tipo: {self.tipo}\nMarca: {self.marca}\nModelo: {self.modelo}\nAño: {self.año}\nNúmero de puertas: {self.num_puertas}\nTipo de combustible: {self.tipo_combustible}"
+
+
+class Barco:
+    def __init__(self, marca, modelo, año, eslora, manga):
+        self.tipo = "Barco"
+        self.marca = marca
+        self.modelo = modelo
+        self.año = año
+        self.eslora = eslora
+        self.manga = manga
+
+    def __str__(self):
+        return f"Tipo: {self.tipo}\nMarca: {self.marca}\nModelo: {self.modelo}\nAño: {self.año}\nEslora: {self.eslora} m\nManga: {self.manga} m"
+
+
+class Avion:
+    def __init__(self, marca, modelo, año, autonomia_vuelo, num_motores):
+        self.tipo = "Avión"
+        self.marca = marca
+        self.modelo = modelo
+        self.año = año
+        self.autonomia_vuelo = autonomia_vuelo
+        self.num_motores = num_motores
+
+    def __str__(self):
+        return f"Tipo: {self.tipo}\nMarca: {self.marca}\nModelo: {self.modelo}\nAño: {self.año}\nAutonomía de vuelo: {self.autonomia_vuelo} km\nNúmero de motores: {self.num_motores}"
+
+
+# Creación de algunos objetos
+
+carro1 = Carro("Toyota", "Corolla", 2023, 4, "Gasolina")
+carro2 = Carro("Ford", "Mustang", 2022, 2, "Gasolina")
+
+barco1 = Barco("Azimut", "Magellano 66", 2020, 20, 5.2)
+barco2 = Barco("Beneteau", "Oceanis 41.1", 2021, 12.44, 4.20)
+
+avion1 = Avion("Airbus", "A320neo", 2022, 6300, 2)
+avion2 = Avion("Boeing", "737 MAX", 2021, 4075, 2)
+
+# Impresión de información
+
+print(f"**Carro 1:**\n{carro1}")
+print(f"\n**Carro 2:**\n{carro2}")
+
+print(f"\n**Barco 1:**\n{barco1}")
+print(f"\n**Barco 2:**\n{barco2}")
+
+print(f"\n**Avión 1:**\n{avion1}")
+print(f"\n**Avión 2:**\n{avion2}")
